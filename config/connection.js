@@ -12,9 +12,7 @@ if (process.env.JAWSDB_URL) {
       process.env.DB_PASSWORD,
       process.env.DB_HOST,
       process.env.DATABASE,
-      {
-        port: 3306
-      }
+      process.env.PORT
     );
   }
   
