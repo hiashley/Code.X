@@ -12,7 +12,10 @@ if (process.env.JAWSDB_URL) {
       process.env.DB_PASSWORD,
       process.env.DB_HOST,
       process.env.DATABASE,
-      process.env.PORT
+      process.env.PORT,
+      {
+        dialect: 'mysql'
+      }
     );
   }
   
